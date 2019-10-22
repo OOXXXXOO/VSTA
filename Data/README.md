@@ -13,7 +13,7 @@
 
 ### 第二阶段
 
-0.克隆  [VSBA](https://github.com/OOXXXXOO/VSBA)
+0.克隆  [VSTA](https://github.com/OOXXXXOO/VSTA)
 
 1.将数据IO相关的代码IO放在./Data文件夹下
 
