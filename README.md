@@ -48,4 +48,4 @@ First Init Work , Introduction ,Doc;
 
 #### Contributor：
 
-####  [Tom Winshare](https://github.com/OOXXXXOO) ; [Peng jun]();
+####  [Tom Winshare](https://github.com/OOXXXXOO) ; [Peng jun](https://github.com/ppjun5022);
