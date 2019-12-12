@@ -24,7 +24,7 @@
 * In the last version of this project , we will use the [Stock Trade Client Project](https://github.com/shidenggui/easytrader) to build a market monitoring auto-trade system.
 
 
-
+##################test  ####################
 
 
 
