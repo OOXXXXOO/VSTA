@@ -21,9 +21,11 @@
 
 ##### Analysis & Back Test Module
 
-XGBoost
+* XGBoost
 
+* LSTM
 
+* RNN
 
 ##### Automatic Trade Client
 
