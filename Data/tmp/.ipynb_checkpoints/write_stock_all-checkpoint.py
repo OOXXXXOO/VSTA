@@ -17,15 +17,14 @@ if __name__ == '__main__':
     time_temp = datetime.datetime.now() - datetime.timedelta(days=1)
     end_dt = time_temp.strftime('%Y%m%d')
     # 建立数据库连接,剔除已入库的部分
-#     db = pymysql.connect(host='127.0.0.1', user='root', passwd='localhost', db='stock', charset='utf8')
-#     cursor = db.cursor()
+    db = pymysql.connect(host='127.0.0.1', user='root', passwd='localhost', db='stock', charset='utf8')
+    cursor = db.cursor()
 
-#     ##################################### get the stack infomation based the number and date scope ################################
+    ##################################### get the stack infomation based the number and date scope ################################
 
-#     # 设定需要获取数据的股票池
-#     # stock_pool = ['002049.SZ']#['002049.SZ','603912.SH','300666.SZ','300618.SZ','300672.SZ']
-#     dc = get_date.data_collect()
-    dc=pro.query('stock_basic', exchange='', list_status='L', fields='ts_code,symbol,name,area,industry,list_date')
+    # 设定需要获取数据的股票池
+    # stock_pool = ['002049.SZ']#['002049.SZ','603912.SH','300666.SZ','300618.SZ','300672.SZ']
+    dc = get_date.data_collect()
     stock_pool = dc.ts_code
     total = len(stock_pool)
     # 循环获取单个股票的日线行情
