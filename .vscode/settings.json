@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/Users/tanwenxuan/anaconda3/envs/workspace/bin/python"
+    "python.pythonPath": "/Users/tanwenxuan/anaconda3/envs/workspace/bin/python",
+    "python.condaPath": "/Users/tanwenxuan/anaconda3/",
+    "pythonPreview.trace": "verbose"
 }
