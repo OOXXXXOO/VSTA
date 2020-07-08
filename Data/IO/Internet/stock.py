@@ -41,6 +41,14 @@ class market():
         self.field_support_list=np.array(list(stock_key.keys()))
         self.customfield=self.field_support_list
         # Yahoo API for global market
+
+
+
+
+
+
+
+
     def set_field(self,fields):
         """
         you just need set fields like [0,1,2,3,4,5,6,7,8] that could index to field
@@ -59,7 +67,27 @@ class market():
             12 ->   "is_hs":"沪市还是深市"
         """
         self.customfield=np.array(self.field_support_list[fields])
-    def show_china_market(self):
+
+
+
+
+    def sector(self,keys:list)->list:
+        sectors=[]
+        for key in keys:
+            keysector=self.market_list[(self.market_list["industry"]==key)]
+            print("# ===== Sector ",key)
+            print(keysector)
+            sectors.append({
+                key:keysector
+            })
+        return sectors
+
+
+
+
+
+
+    def list(self):
         fields=""
         for index,field in enumerate(self.customfield):
             if index<len(self.customfield)-1:
@@ -95,7 +123,14 @@ class stock():
         pass
         # if isinstance(field,list):
 
-
+    def history(self,type="daily"):
+        """
+        type:
+        daily
+        weekly
+        monthly
+        """
+        
 
     def __call__(self):
         pass
@@ -114,7 +149,8 @@ class stock_trade(stock):
 def main():
     m=market()
     m.set_field([0,1,3,4,5])
-    m.show_china_market()
+    m.list()
+    m.sector(["银行"])
 
 
 
